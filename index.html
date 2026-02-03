@@ -1,0 +1,986 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhavesh Suthar - Portfolio</title>
+
+  <!-- External CSS & Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#3b82f6",
+            secondary: "#1e40af",
+            dark: "#111827",
+            card: "#1f2937",
+            border: "#374151",
+          },
+          borderRadius: {
+            button: "8px",
+          },
+          fontFamily: {
+            inter: ["Inter", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+
+<body class="bg-dark text-white font-inter">
+  <!-- Navigation -->
+  <nav class="navbar py-4">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center justify-between">
+        <div class="text-xl font-bold">bhaveshsuthar</div>
+        <div class="flex space-x-8">
+          <button class="nav-link text-white active" data-target="home">
+            Home
+          </button>
+          <button class="nav-link text-gray-400" data-target="about">
+            About
+          </button>
+          <button class="nav-link text-gray-400" data-target="resume">
+            Resume
+          </button>
+          <button class="nav-link text-gray-400" data-target="projects">
+            Projects
+          </button>
+        </div>
+        <div class="text-sm text-gray-400">EST 2024</div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="section active min-h-screen relative overflow-hidden">
+      <div class="hero-background" style="
+            background-image: url(&quot;https://readdy.ai/api/search-image?query=modern%20developer%20workspace%20with%20laptop%20showing%20code%20on%20screen%2C%20dark%20ambient%20lighting%2C%20clean%20desk%20setup%20with%20mechanical%20keyboard%2C%20multiple%20monitors%2C%20coffee%20cup%2C%20plants%2C%20professional%20coding%20environment%2C%20high%20contrast%20lighting%2C%20cinematic%20atmosphere%2C%20dark%20theme%2C%20minimalist%20aesthetic&width=1920&height=1080&orientation=landscape&quot;);
+          "></div>
+      <div class="hero-overlay"></div>
+      <div class="relative z-10 min-h-screen flex items-center">
+        <div class="max-w-7xl mx-auto px-6 w-full">
+          <div class="max-w-2xl">
+            <h1 class="text-6xl font-bold mb-4">
+              bhavesh<br />
+              <span class="highlight">suthar</span>
+            </h1>
+            <p class="text-xl text-gray-300 mb-8">Data Science </p>
+            <div class="flex space-x-4 mb-12 hero-buttons">
+              <button class="btn-primary bg-primary text-white px-8 py-3 rounded-button font-medium"
+                data-target="resume">
+                Resume
+              </button>
+              <button class="btn-outline border border-gray-600 text-white px-8 py-3 rounded-button font-medium"
+                id="contactBtn">
+                Contact Me
+              </button>
+            </div>
+            <div class="flex space-x-6">
+              <a href="https://github.com/bhaveshsuthar"
+                class="social-link w-10 h-10 flex items-center justify-center text-gray-400">
+                <i class="ri-github-line ri-lg"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/bhavesh-suthar-00761b315/"
+                class="social-link w-10 h-10 flex items-center justify-center text-gray-400 hover:text-primary">
+                <i class="ri-linkedin-line ri-lg"></i>
+              </a>
+              <a href="https://www.instagram.com/_bhaveshsuthar_08/"
+                class="social-link w-10 h-10 flex items-center justify-center text-gray-400">
+                <i class="ri-instagram-line ri-lg"></i>
+              </a>
+              <a href="mailto:bhaveshsuthar08835@gmail.com"
+                class="social-link w-10 h-10 flex items-center justify-center text-gray-400 hover:text-primary">
+                <i class="ri-mail-line ri-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section min-h-screen flex items-center py-20">
+      <div class="max-w-7xl mx-auto px-6 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center about-grid">
+          <div>
+            <h2 class="text-5xl font-bold mb-8">
+              <span class="highlight">ABOUT</span><br />
+              bhaveshsuthar08835@gmail.com
+            </h2>
+            <div class="space-y-6 text-gray-300 leading-relaxed">
+              <p>
+                I'm a Data Science Analyst with a passion for turning raw data
+                into actionable insights that drive business decisions. At
+                TechCorp Solutions, I analyze large-scale datasets, build
+                predictive models using Python & Hadoop, and design visual
+                dashboards that help stakeholders track performance in real
+                time.
+              </p>
+              <p>
+                With a BCA in Computer Science and a foundation in data
+                structures & algorithms, I combine strong analytical rigor
+                with hands-on coding skills. My projects range from a
+                Tic-Tac-Toe game and a QR-Code generator to a full-scale
+                School Management System.
+              </p>
+              <p>
+                When I'm not working, I'm programming small tools or exploring
+                new algorithmic approaches—coding is my hobby too.
+              </p>
+            </div>
+            <div class="mt-12">
+              <div class="text-sm text-gray-500 mb-2">CONTACT DETAILS</div>
+              <div class="text-gray-300">bhaveshsuthar08835@gmail.com</div>
+              <div class="text-gray-300">bhavesh suthar</div>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <div class="w-80 h-96 rounded-lg overflow-hidden">
+              <img
+                src="https://static.readdy.ai/image/6681cd145646decaf94c5b5407b8a416/4a593c8f24a1c2970015f16c7eaa947f.jfif"
+                alt="bhavesh suthar"
+                class="w-full h-full object-cover object-top grayscale hover:grayscale-0 transition-all duration-500" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section min-h-screen py-20">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 resume-grid">
+          <!-- Left Column: Skills -->
+          <div class="space-y-12">
+            <div>
+              <h3 class="text-xl font-semibold mb-6 text-primary">
+                SOFTWARE SKILLS
+              </h3>
+              <div class="space-y-4">
+                <div>
+                  <div class="flex justify-between mb-2">
+                    <span class="text-sm">Database</span>
+                    <span class="text-sm text-gray-400">90%</span>
+                  </div>
+                  <div class="w-full bg-gray-800 rounded-full h-1">
+                    <div class="skill-bar bg-primary h-1 rounded-full" data-width="90%" style="width: 90%"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="flex justify-between mb-2">
+                    <span class="text-sm">html</span>
+                    <span class="text-sm text-gray-400">80%</span>
+                  </div>
+                  <div class="w-full bg-gray-800 rounded-full h-1">
+                    <div class="skill-bar bg-primary h-1 rounded-full" data-width="85%" style="width: 85%"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="flex justify-between mb-2">
+                    <span class="text-sm">C</span>
+                    <span class="text-sm text-gray-400">45%</span>
+                  </div>
+                  <div class="w-full bg-gray-800 rounded-full h-1">
+                    <div class="skill-bar bg-primary h-1 rounded-full" data-width="80%" style="width: 80%"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="flex justify-between mb-2">
+                    <span class="text-sm">Python</span>
+                    <span class="text-sm text-gray-400">80%</span>
+                  </div>
+                  <div class="w-full bg-gray-800 rounded-full h-1">
+                    <div class="skill-bar bg-primary h-1 rounded-full" data-width="75%" style="width: 75%"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="flex justify-between mb-2">
+                    <span class="text-sm">SQL</span>
+                    <span class="text-sm text-gray-400">75%</span>
+                  </div>
+                  <div class="w-full bg-gray-800 rounded-full h-1">
+                    <div class="skill-bar bg-primary h-1 rounded-full" data-width="70%" style="width: 70%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold mb-6 text-primary">
+                LANGUAGES
+              </h3>
+              <div class="space-y-4">
+                <div>
+                  <div class="flex justify-between mb-2">
+                    <span class="text-sm">English</span>
+                    <span class="text-sm text-gray-400">Native</span>
+                  </div>
+                  <div class="w-full bg-gray-800 rounded-full h-1">
+                    <div class="skill-bar bg-primary h-1 rounded-full" data-width="100%" style="width: 100%"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="flex justify-between mb-2">
+                    <span class="text-sm">Hindi</span>
+                    <span class="text-sm text-gray-400">Fluent</span>
+                  </div>
+                  <div class="w-full bg-gray-800 rounded-full h-1">
+                    <div class="skill-bar bg-primary h-1 rounded-full" data-width="85%" style="width: 85%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold mb-6 text-primary">
+                PERSONAL SKILLS
+              </h3>
+              <div class="space-y-3 text-sm text-gray-300">
+                <div>Creative Problem Solving</div>
+                <div>Analytical Thinking</div>
+                <div>Team Collaboration</div>
+                <div>Project Management</div>
+                <div>Continuous Learning</div>
+                <div>vedio editing</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Middle Column: Experience & Education -->
+          <div class="space-y-12">
+            <div>
+              <h3 class="text-xl font-semibold mb-8 text-primary">
+                EXPERIENCE
+              </h3>
+              <div class="space-y-8">
+                <div class="timeline-item fade-in">
+                  <div class="text-sm text-primary mb-1">2023 - Present</div>
+                  <h4 class="font-semibold mb-2">Junior python Developer</h4>
+                  <div class="text-sm text-gray-400 mb-2"></div>
+                  <p class="text-sm text-gray-300">
+                    Developed and maintained Python applications with a focus
+                    on clean, reusable code, database integration, automation,
+                    testing, and collaborative development using Git/GitHub,
+                    while supporting performance optimization and debugging
+                    with senior developers.
+                  </p>
+                </div>
+                <div class="timeline-item fade-in">
+                  <div class="text-sm text-primary mb-1">2023 - 2024</div>
+                  <h4 class="font-semibold mb-2">Data analytical</h4>
+
+                  <p class="text-sm text-gray-300">
+                    Analyzed complex datasets to extract actionable insights,
+                    built predictive models, and created visual dashboards to
+                    support data-driven decision-making.
+                  </p>
+                </div>
+                <div class="timeline-item fade-in">
+                  <div class="text-sm text-primary mb-1">2019 - 2020</div>
+                  <h4 class="font-semibold mb-2">Data scinece</h4>
+                  <div class="text-sm text-gray-400 mb-2">frelancing</div>
+                  <p class="text-sm text-gray-300">
+                    Conducted data cleaning, exploratory data analysis, and
+                    statistical modeling to derive insights and support
+                    business strategies.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold mb-6 text-primary">
+                EDUCATION
+              </h3>
+              <div class="timeline-item fade-in">
+                <div class="text-sm text-primary mb-1">2024 - 2025</div>
+                <h4 class="font-semibold mb-2">
+                  Bachelor of Computer Applications
+                </h4>
+                <div class="text-sm text-gray-400 mb-2">
+                  University of Goa
+                </div>
+                <p class="text-sm text-gray-300">
+                  Relevant Coursework: Data Structures, Algorithms, Database
+                  Management, Web Development, Software Engineering
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Capabilities -->
+          <div class="space-y-12">
+            <div>
+              <h3 class="text-xl font-semibold mb-6 text-primary">
+                WHAT CAN I DO?
+              </h3>
+              <div class="space-y-6">
+                <div class="flex items-start space-x-3">
+                  <div class="w-6 h-6 flex items-center justify-center text-primary">
+                    <i class="ri-code-line"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium mb-1">project development</h4>
+                    <p class="text-sm text-gray-400">
+                      python programming and scripting
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start space-x-3">
+                  <div class="w-6 h-6 flex items-center justify-center text-primary">
+                    <i class="ri-server-line"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium mb-1">c language</h4>
+                    <p class="text-sm text-gray-400">
+                      System-level programming and performance optimization
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start space-x-3">
+                  <div class="w-6 h-6 flex items-center justify-center text-primary">
+                    <i class="ri-database-line"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium mb-1">My SQL Learning</h4>
+                    <p class="text-sm text-gray-400">
+                      Database management and data retrieval
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start space-x-3">
+                  <div class="w-6 h-6 flex items-center justify-center text-primary">
+                    <i class="ri-palette-line"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium mb-1">UI/UX in python language</h4>
+                    <p class="text-sm text-gray-400">
+                      Designing user-friendly interfaces and experiences
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold mb-6 text-primary">
+                TECHNICAL SKILLS
+              </h3>
+              <div class="grid grid-cols-2 gap-4 text-sm">
+                <div class="bg-gray-800 p-3 rounded text-center hover:bg-gray-700 transition-colors">
+                  Git
+                </div>
+                <div class="bg-gray-800 p-3 rounded text-center hover:bg-gray-700 transition-colors">
+                  VS Code
+                </div>
+                <div class="bg-gray-800 p-3 rounded text-center hover:bg-gray-700 transition-colors">
+                  MySQL
+                </div>
+                <div class="bg-gray-800 p-3 rounded text-center hover:bg-gray-700 transition-colors">
+                  vedio editing
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold mb-6 text-primary">
+                HOBBIES & INTERESTS
+              </h3>
+              <div class="space-y-3">
+                <div class="flex items-center space-x-3">
+                  <div class="w-6 h-6 flex items-center justify-center text-primary">
+                    <i class="ri-code-s-slash-line"></i>
+                  </div>
+                  <span class="text-sm"> Coding & Programming </span>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <div class="w-6 h-6 flex items-center justify-center text-primary">
+                    <i class="ri-chess-line"></i>
+                  </div>
+                  <span class="text-sm"> Playing Chess </span>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <div class="w-6 h-6 flex items-center justify-center text-primary">
+                    <i class="ri-music-line"></i>
+                  </div>
+                  <span class="text-sm"> music listening </span>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <div class="w-6 h-6 flex items-center justify-center text-primary">
+                    <i class="ri-book-line"></i>
+                  </div>
+                  <span class="text-sm">
+                    Reading Books sharing knowledge
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section min-h-screen py-20">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-5xl font-bold mb-16 text-center">
+          <span class="highlight">PROJECTS</span>
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="project-card bg-gray-800 rounded-lg overflow-hidden">
+            <div class="h-48 bg-cover bg-center" style="
+                  background-image: url(&quot;data:image/jpeg;base64,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&quot;);
+                "></div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">
+                Library Management system
+              </h3>
+              <p class="text-gray-400 text-sm mb-4">
+                Web-based platform for managing book inventory, member
+                records, and lending operations
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-primary/20 text-primary px-2 py-1 rounded text-xs">c language</span>
+                <span class="bg-primary/20 text-primary px-2 py-1 rounded text-xs">Data Structures
+                </span>
+                <span class="bg-primary/20 text-primary px-2 py-1 rounded text-xs">File Handling (Data Save &
+                  Load)</span>
+                <span class="bg-primary/20 text-primary px-2 py-1 rounded text-xs">Console Application
+                </span>
+              </div>
+            </div>
+          </div>
+
+
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="project-card bg-gray-800 rounded-lg overflow-hidden">
+              <div class="h-48 bg-cover bg-center" style="
+                  background-image: url(&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ49yZg_tm-mIRhdQK_Fv-ciGRYP79GRg2RkA&s&quot;);
+                "></div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">
+                  Tic-Tac-Toe Game
+                </h3>
+                <p class="text-gray-400 text-sm mb-4">
+                  Developed a Tic Tac Toe game implementing core programming concepts such as arrays, conditional logic,
+                  and functions to manage gameplay, validate moves, and determine winners.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="bg-primary/20 text-primary px-2 py-1 rounded text-xs">python language
+                  </span>
+                  <span class="bg-primary/20 text-primary px-2 py-1 rounded text-xs">(Optional) GUI using Tkinter
+                  </span>
+                  <span class="bg-primary/20 text-primary px-2 py-1 rounded text-xs">GUI-based game
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card bg-gray-800 rounded-lg overflow-hidden">
+              <div class="h-48 bg-cover bg-center" style="
+                  background-image: url(&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4bePa_Qy6tcwHrLEva0hoJiYMus-Y1h1khA&s&quot;);
+                "></div>
+              <div class="p-6">
+                <h4 class="text-xl font-semibold mb-2">
+                  Student Management System
+                </h4 class=>
+                <p class="text-gray-400 text-sm mb-4">
+                  A web application to manage student records, courses,
+                  and grades with user authentication and role-based access control.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="bg-primary/20 text-primary px-2 py-1 rounded text-xs">python language
+                  </span>
+                  <span class="bg-primary/20 text-primary px-2 py-1 rounded text-xs">Django Framework
+                  </span>
+                  <span class="bg-primary/20 text-primary px-2 py-1 rounded text-xs">SQLite Database
+                  </span>
+                  <span class="bg-primary/20 text-primary px-2 py-1 rounded text-xs">User Authentication
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+  </main>
+
+  <!-- Contact Modal -->
+  <div id="contactModal" class="modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <button id="closeModal" class="absolute right-4 top-4 text-gray-400 hover:text-white z-10">
+        <i class="ri-close-line ri-lg"></i>
+      </button>
+      <div class="p-8">
+        <h3 class="text-2xl font-semibold mb-6">Contact Me</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <form id="contactForm" class="space-y-4">
+              <div>
+                <label class="block text-sm text-gray-400 mb-1">Name</label>
+                <input type="text" name="name"
+                  class="w-full bg-gray-700 rounded px-4 py-2 text-white border-none focus:ring-2 focus:ring-primary focus:outline-none"
+                  required />
+              </div>
+              <div>
+                <label class="block text-sm text-gray-400 mb-1">Email</label>
+                <input type="email" name="email"
+                  class="w-full bg-gray-700 rounded px-4 py-2 text-white border-none focus:ring-2 focus:ring-primary focus:outline-none"
+                  required />
+              </div>
+              <div>
+                <label class="block text-sm text-gray-400 mb-1">Subject</label>
+                <input type="text" name="subject"
+                  class="w-full bg-gray-700 rounded px-4 py-2 text-white border-none focus:ring-2 focus:ring-primary focus:outline-none"
+                  required />
+              </div>
+              <div>
+                <label class="block text-sm text-gray-400 mb-1">Message</label>
+                <textarea name="message" rows="4"
+                  class="w-full bg-gray-700 rounded px-4 py-2 text-white border-none resize-none focus:ring-2 focus:ring-primary focus:outline-none"
+                  maxlength="500" required></textarea>
+                <div class="text-xs text-gray-500 text-right mt-1">
+                  <span id="charCount">0</span>/500 characters
+                </div>
+              </div>
+              <button type="submit"
+                class="w-full bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-secondary transition-colors">
+                Send Message
+              </button>
+            </form>
+          </div>
+          <div class="space-y-6">
+            <div>
+              <h4 class="font-medium mb-2">Contact Information</h4>
+              <div class="space-y-2 text-sm text-gray-400">
+                <div class="flex items-center space-x-2">
+                  <i class="ri-mail-line"></i>
+                  <span>bhaveshsuthar08835@gmail.com</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                  <i class="ri-map-pin-line"></i>
+                  <span>Goa, India</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                  <i class="ri-phone-line"></i>
+                  <span>+91 9116888648</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h4 class="font-medium mb-2">Social Media</h4>
+              <div class="flex space-x-4">
+                <a href="https://github.com/bhavesh-gff"
+                  class="w-8 h-8 flex items-center justify-center text-gray-400 hover:text-primary" target="_blank">
+                  <i class="ri-github-line ri-lg"></i>
+
+
+                  <a href="https://www.linkedin.com/in/bhavesh-suthar-887b221ba/"
+                    class="w-8 h-8 flex items-center justify-center text-gray-400 hover:text-primary" target="_blank">
+                    <i class="ri-linkedin-line ri-lg"></i>
+                    <a href="https://www.instagram.com/_bhaveshsuthar_08/"
+                      class="w-8 h-8 flex items-center justify-center text-gray-400 hover:text-primary" target="_blank">
+                      <i class="ri-instagram-line ri-lg"></i>
+
+                    </a>
+
+              </div>
+            </div>
+            <div>
+              <h4 class="font-medium mb-2">Response Time</h4>
+              <p class="text-sm text-gray-400">
+                I typically respond to emails within 24 hours. For urgent
+                matters, please connect with me on LinkedIn.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Navigation functionality
+    class Navigation {
+      constructor() {
+        this.sections = document.querySelectorAll(".section");
+        this.navLinks = document.querySelectorAll(".nav-link");
+        this.currentSection = "home";
+
+        this.init();
+      }
+
+      init() {
+        this.setupEventListeners();
+        this.activateSection(this.currentSection);
+        this.setupScrollSpy();
+      }
+
+      setupEventListeners() {
+        // Navigation links
+        this.navLinks.forEach((link) => {
+          link.addEventListener("click", (e) => {
+            e.preventDefault();
+            const target = link.dataset.target;
+            this.navigateTo(target);
+          });
+        });
+
+        // Resume button in hero
+        const resumeButtons = document.querySelectorAll(
+          '[data-target="resume"]',
+        );
+        resumeButtons.forEach((button) => {
+          button.addEventListener("click", (e) => {
+            e.preventDefault();
+            this.navigateTo("resume");
+          });
+        });
+      }
+
+      setupScrollSpy() {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const sectionId = entry.target.id;
+                this.updateNavLinks(sectionId);
+                this.currentSection = sectionId;
+              }
+            });
+          },
+          {
+            threshold: 0.5,
+            rootMargin: "-100px 0px -100px 0px",
+          },
+        );
+
+        this.sections.forEach((section) => {
+          observer.observe(section);
+        });
+      }
+
+      navigateTo(sectionId) {
+        this.deactivateCurrentSection();
+        this.activateSection(sectionId);
+        this.updateNavLinks(sectionId);
+
+        // Smooth scroll to section
+        const section = document.getElementById(sectionId);
+        if (section) {
+          window.scrollTo({
+            top: section.offsetTop - 80,
+            behavior: "smooth",
+          });
+        }
+      }
+
+      activateSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.classList.add("active");
+          this.currentSection = sectionId;
+        }
+      }
+
+      deactivateCurrentSection() {
+        this.sections.forEach((section) => {
+          section.classList.remove("active");
+        });
+      }
+
+      updateNavLinks(activeSection) {
+        this.navLinks.forEach((link) => {
+          link.classList.remove("active", "text-white");
+          link.classList.add("text-gray-400");
+          if (link.dataset.target === activeSection) {
+            link.classList.add("active", "text-white");
+          }
+        });
+      }
+    }
+
+    // Contact Modal functionality
+    class ContactModal {
+      constructor() {
+        this.modal = document.getElementById("contactModal");
+        this.contactBtn = document.getElementById("contactBtn");
+        this.closeBtn = document.getElementById("closeModal");
+        this.contactForm = document.getElementById("contactForm");
+        this.charCount = document.getElementById("charCount");
+        this.messageTextarea = this.contactForm?.querySelector(
+          'textarea[name="message"]',
+        );
+
+        this.init();
+      }
+
+      init() {
+        if (!this.modal) return;
+
+        this.setupEventListeners();
+      }
+
+      setupEventListeners() {
+        // Open modal
+        this.contactBtn?.addEventListener("click", () => this.open());
+
+        // Close modal
+        this.closeBtn?.addEventListener("click", () => this.close());
+
+        // Close on backdrop click
+        this.modal?.addEventListener("click", (e) => {
+          if (
+            e.target === this.modal ||
+            e.target.classList.contains("modal-backdrop")
+          ) {
+            this.close();
+          }
+        });
+
+        // Form submission
+        this.contactForm?.addEventListener("submit", (e) =>
+          this.handleSubmit(e),
+        );
+
+        // Character count
+        if (this.messageTextarea && this.charCount) {
+          this.messageTextarea.addEventListener("input", () => {
+            this.charCount.textContent = this.messageTextarea.value.length;
+          });
+        }
+
+        // Close on Escape key
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape" && this.modal.classList.contains("active")) {
+            this.close();
+          }
+        });
+      }
+
+      open() {
+        if (this.modal) {
+          this.modal.classList.add("active");
+          document.body.style.overflow = "hidden";
+          // Focus on first input
+          const firstInput = this.contactForm.querySelector("input");
+          if (firstInput) {
+            setTimeout(() => firstInput.focus(), 100);
+          }
+        }
+      }
+
+      close() {
+        if (this.modal) {
+          this.modal.classList.remove("active");
+          document.body.style.overflow = "";
+        }
+      }
+
+      async handleSubmit(e) {
+        e.preventDefault();
+
+        const formData = new FormData(this.contactForm);
+        const data = Object.fromEntries(formData);
+
+        // Simple validation
+        if (!data.name || !data.email || !data.message) {
+          this.showMessage("Please fill in all required fields.", "error");
+          return;
+        }
+
+        // Email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(data.email)) {
+          this.showMessage("Please enter a valid email address.", "error");
+          return;
+        }
+
+        try {
+          // Show loading state
+          const submitBtn = this.contactForm.querySelector(
+            'button[type="submit"]',
+          );
+          const originalText = submitBtn.textContent;
+          submitBtn.textContent = "Sending...";
+          submitBtn.disabled = true;
+
+          // Simulate API call (replace with actual API endpoint)
+          await new Promise((resolve) => setTimeout(resolve, 1500));
+
+          this.showMessage(
+            "Message sent successfully! I will get back to you soon.",
+            "success",
+          );
+          this.contactForm.reset();
+          if (this.charCount) this.charCount.textContent = "0";
+          this.close();
+
+          // Reset button state
+          submitBtn.textContent = originalText;
+          submitBtn.disabled = false;
+        } catch (error) {
+          this.showMessage(
+            "Failed to send message. Please try again.",
+            "error",
+          );
+        }
+      }
+
+      showMessage(text, type) {
+        // Remove existing toasts
+        const existingToasts = document.querySelectorAll(".toast");
+        existingToasts.forEach((toast) => toast.remove());
+
+        const toast = document.createElement("div");
+        toast.className = `toast ${type}`;
+        toast.textContent = text;
+        document.body.appendChild(toast);
+
+        setTimeout(() => {
+          toast.remove();
+        }, 5000);
+      }
+    }
+
+    // Animations functionality
+    class Animations {
+      constructor() {
+        this.init();
+      }
+
+      init() {
+        this.setupSkillBarAnimations();
+        this.setupScrollAnimations();
+        this.setupHoverEffects();
+      }
+
+      setupSkillBarAnimations() {
+        const skillObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const skillBars = entry.target.querySelectorAll(".skill-bar");
+                skillBars.forEach((bar) => {
+                  const width = bar.dataset.width || bar.style.width;
+                  bar.style.width = "0%";
+
+                  setTimeout(() => {
+                    bar.style.width = width;
+                  }, 100);
+                });
+              }
+            });
+          },
+          {
+            threshold: 0.2,
+            rootMargin: "0px 0px -100px 0px",
+          },
+        );
+
+        const resumeSection = document.getElementById("resume");
+        if (resumeSection) {
+          skillObserver.observe(resumeSection);
+        }
+      }
+
+      setupScrollAnimations() {
+        const fadeObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("fade-in");
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px",
+          },
+        );
+
+        // Observe elements that should fade in
+        document
+          .querySelectorAll(".project-card, .timeline-item")
+          .forEach((el) => {
+            fadeObserver.observe(el);
+          });
+      }
+
+      setupHoverEffects() {
+        // Add hover effects to project cards
+        const projectCards = document.querySelectorAll(".project-card");
+        projectCards.forEach((card) => {
+          card.addEventListener("mouseenter", () => {
+            card.style.transform = "translateY(-5px)";
+          });
+
+          card.addEventListener("mouseleave", () => {
+            card.style.transform = "translateY(0)";
+          });
+        });
+
+        // Add hover effects to buttons
+        const buttons = document.querySelectorAll(
+          ".btn-primary, .btn-outline",
+        );
+        buttons.forEach((btn) => {
+          btn.addEventListener("mouseenter", () => {
+            btn.style.transform = "translateY(-2px)";
+          });
+
+          btn.addEventListener("mouseleave", () => {
+            btn.style.transform = "translateY(0)";
+          });
+        });
+      }
+    }
+
+    // Initialize everything when DOM is loaded
+    document.addEventListener("DOMContentLoaded", () => {
+      new Navigation();
+      new ContactModal();
+      new Animations();
+
+      // Add loading animation
+      document.body.style.opacity = "0";
+      setTimeout(() => {
+        document.body.style.transition = "opacity 0.5s ease";
+        document.body.style.opacity = "1";
+      }, 100);
+
+      // Add smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href");
+          if (targetId === "#") return;
+
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
