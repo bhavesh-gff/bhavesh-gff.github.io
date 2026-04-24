@@ -1,0 +1,29 @@
+ OS files
+.DS_Store
+Thumbs.db
+
+VS Code
+.vscode/
+
+JetBrains IDEs
+.idea/
+
+ Logs
+*.log
+
+ Temporary files
+*.tmp
+*.temp
+
+Environment files
+.env
+
+ Cache files
+.cache/
+
+ Node modules (if added later)
+node_modules/
+
+ Build folders (if React version is created later)
+dist/
+build/
